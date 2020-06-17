@@ -7,13 +7,13 @@ import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-public class GenerateTask implements ITask<byte[]>, Serializable {
+public class Generate implements ITask<byte[]>, Serializable {
     private final long count;
     private final NumberType type;
     private final long min;
     private final long max;
 
-    public GenerateTask(long count, NumberType type, long min, long max) {
+    public Generate(long count, NumberType type, long min, long max) {
         this.count = count;
         this.type = type;
         this.min = min;
